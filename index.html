@@ -1041,6 +1041,9 @@
 
     margin-top: 2px;
 }
+.menu-toggle {
+  display: none;
+}
 
     /* ==========================================================
        RESPONSIVO
@@ -1072,6 +1075,12 @@
     }
 
     @media (max-width: 780px) {
+      .whatsapp-header {
+    display: none !important;
+  }
+      .menu-toggle {
+    display: flex;
+  }
       .container {
         width: min(calc(100% - 28px), var(--max));
       }
@@ -1084,18 +1093,6 @@
         width: 185px;
         max-width: 50vw;
       }
-
-      .whatsapp-header {
-        font-size: 0;
-        width: 48px;
-        padding: 0;
-      }
-
-      .whatsapp-header::after {
-        content: "◉";
-        font-size: 22px;
-      }
-
       .hero-grid {
         grid-template-columns: 1fr;
       }
